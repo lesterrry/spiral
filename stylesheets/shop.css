@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+.block__row, .block__rowtwo {
+display:flex;
+}
+.block__element, .block__elementtwo {
+flex: 0 1 33.333%;
+padding: 20px;
+}
+
+/* .line {
+    flex: 0 1 33.333%;
+    padding: 20px;
+    color: black;
+    height: 40px;
+} */
+
+.block__content, .block__contenttwo {
+    max-width: 450px;
+    max-height: 450px;
+}
+.nav-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    overflow-x: auto; 
+}
+  
+nav {
+    width: max-content; 
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    white-space: nowrap;
+}
+  
+nav ul li {
+    margin: 0 10px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: filter 0.3s ease; 
+    filter: blur(2px); 
+}
+  
+nav ul li a:hover {
+    filter: blur(0);
+}

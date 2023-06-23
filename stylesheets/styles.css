@@ -1,0 +1,12 @@
+@import "reset.css";
+@font-face {
+    font-family: 'HelveticaNeueCyr-MediumItalic';
+    src: url('../fonts/HelveticaNeueCyr-MediumItalic.ttf') format('truetype');
+    
+    font-family: 'HelveticaNeueCyr-Medium';
+    src: url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+
+    font-family: 'HelveticaNeueCyr-Light';
+    src: url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+  }
+  

@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+p {
+    color: #f6f6f6;
+    font-size: 54px;
+    padding: 40px;
+    font-family: 'HelveticaNeueCyr-Light';
+}
+html, body {
+    cursor: none;
+    cursor: url('../interweb/svg/cursor.svg') 4 4, default;
+}
+
+.cursor {
+    width: 120px;
+    height: 100px;
+}
+

@@ -1,0 +1,7 @@
+@import "reset.css";
+@import "content.css"; 
+@font-face {
+    font-family: "Gramatika Demo Regular";
+    src: url('../fonts/Gramatika\ Demo\ Regular.otf');
+        
+}

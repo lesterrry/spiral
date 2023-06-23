@@ -1,0 +1,618 @@
+html, body {
+    cursor: none;
+    cursor: url('../svg/cursor.svg') 4 4, default;
+}
+body {
+    background-color: black;
+}
+.cursor {
+    width: 120px;
+    height: 100px;
+}
+/* бегущая строка */
+.runningline {
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+}
+.marquee {
+    padding: 1.8vw 0vw;
+    color: white;
+    animation: marquee 15s linear infinite; 
+    font-family: Gramatika Demo Regular;
+    font-size: 5.000vw;
+    white-space: nowrap;
+}
+.marquee::after {
+    content: "БЕСКОНЕЧНАЯ БАРАХОЛКА БЕСКОНЕЧНАЯ БАРАХОЛКА БЕСКОНЕЧНАЯ БАРАХОЛКА БЕСКОНЕЧНАЯ БАРАХОЛКА БЕСКОНЕЧНАЯ БАРАХОЛКА ";
+}
+@keyframes marquee {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+
+
+/* информация о товарах (фон) */
+.info {
+    width: 100.000vw;
+    height: 10.000vw;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: none;
+}
+
+
+/* товары на барахолке */
+.objects > div {
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: absolute;
+    color: white;
+}
+.lampmini {
+    width: 2.339vw; 
+    height: 4.345vw;
+    background-image: url('../svg/lampmini.svg');
+    top: 10.521vw;
+    left: 3.490vw;
+}
+.lampmini:hover {
+    background-image: url('../svgfill/lampminifill.svg');
+}
+.lampminiinfo {
+    opacity: 0%;
+    background-image: url('../info/lampminiinfo.svg');
+}
+.lampmini:hover ~ .lampminiinfo {
+    opacity: 100%;
+    display: block;
+}
+.umbrella {
+    width: 25.536vw; 
+    height: 19.423vw;
+    background-image: url('../svg/umbrella.svg');
+    top: 10.521vw;
+    left: 7.240vw;
+}
+.umbrella:hover {
+    background-image: url('../svgfill/umbrellafill.svg');
+}
+.umbrellainfo {
+    opacity: 0%;
+    background-image: url('../info/umbrellainfo.svg');
+}
+.umbrella:hover ~ .umbrellainfo {
+    opacity: 100%;
+    display: block;
+}
+.light {
+    width: 3.769vw; 
+    height: 3.978vw;
+    background-image: url('../svg/light.svg');
+    top: 22.031vw;
+    left: 28.021vw;
+}
+.light:hover {
+    background-image: url('../svgfill/lightfill.svg');
+}
+.lightinfo {
+    opacity: 0%;
+    background-image: url('../info/lightinfo.svg');
+}
+.light:hover ~ .lightinfo {
+    opacity: 100%;
+    display: block;
+}
+.watch {
+    width: 18.359vw; 
+    height: 58.708vw;
+    background-image: url('../svg/watch.svg');
+    top: 10.521vw;
+    left: 32.604vw;
+}
+.watch:hover {
+    background-image: url('../svgfill/watchfill.svg');
+}
+.watchinfo {
+    opacity: 0%;
+    background-image: url('../info/watchinfo.svg');
+}
+.watch:hover ~ .watchinfo {
+    opacity: 100%;
+    display: block;
+}
+.earrings {
+    width: 10.076vw; 
+    height: 6.654vw;
+    background-image: url('../svg/earrings.svg');
+    top: 18.229vw;
+    left: 52.188vw;
+}
+.earrings:hover {
+    background-image: url('../svgfill/earringsfill.svg');
+}
+.earringsinfo {
+    opacity: 0%;
+    background-image: url('../info/earringsinfo.svg');
+}
+.earrings:hover ~ .earringsinfo {
+    opacity: 100%;
+    display: block;
+}
+.blanket {
+    width: 39.071vw; 
+    height: 34.674vw;
+    background-image: url('../svg/blanket.svg');
+    top: 10.521vw;
+    left: 57.500vw;
+}
+.blanket:hover {
+    background-image: url('../svgfill/blanketfill.svg');
+}
+.blanketinfo {
+    opacity: 0%;
+    background-image: url('../info/blanketinfo.svg');
+}
+.blanket:hover ~ .blanketinfo {
+    opacity: 100%;
+    display: block;
+}
+.postkart {
+    width: 13.042vw; 
+    height: 9.617vw;
+    background-image: url('../svg/postkart.svg');
+    top: 10.521vw;
+    left: 83.542vw;
+}
+.postkart:hover {
+    background-image: url('../svgfill/postkartfill.svg');
+}
+.postkartinfo {
+    opacity: 0%;
+    background-image: url('../info/postkartinfo.svg');
+}
+.postkart:hover ~ .postkartinfo {
+    opacity: 100%;
+    display: block;
+}
+.sciccors {
+    width: 7.571vw; 
+    height: 8.211vw;
+    background-image: url('../svg/sciccors.svg');
+    top: 23.750vw;
+    left: 87.083vw;
+}
+.sciccors:hover {
+    background-image: url('../svgfill/sciccorsfill.svg');
+}
+.sciccorsinfo {
+    opacity: 0%;
+    background-image: url('../info/sciccorsinfo.svg');
+}
+.sciccors:hover ~ .sciccorsinfo {
+    opacity: 100%;
+    display: block;
+}
+.hairbrush {
+    width: 7.360vw; 
+    height: 3.538vw;
+    background-image: url('../svg/hairbrush.svg');
+    top: 21.250vw;
+    left: 3.854vw;
+}
+.hairbrush:hover {
+    background-image: url('../svgfill/hairbrushfill.svg');
+}
+.hairbrushinfo {
+    opacity: 0%;
+    background-image: url('../info/hairbrushinfo.svg');
+}
+.hairbrush:hover ~ .hairbrushinfo {
+    opacity: 100%;
+    display: block;
+}
+.lampbig {
+    width: 11.457vw; 
+    height: 27.174vw;
+    background-image: url('../svg/lampbig.svg');
+    top: 27.187vw;
+    left: 3.438vw;
+}
+.lampbig:hover {
+    background-image: url('../svgfill/lampbigfill.svg');
+}
+.lampbiginfo {
+    opacity: 0%;
+    background-image: url('../info/lampbiginfo.svg');
+}
+.lampbig:hover ~ .lampbiginfo {
+    opacity: 100%;
+    display: block;
+}
+.teapot {
+    width: 13.389vw; 
+    height: 10.696vw;
+    background-image: url('../svg/teapot.svg');
+    top: 36.302vw;
+    left: 20.156vw;
+}
+.teapot:hover {
+    background-image: url('../svgfill/teapotfill.svg');
+}
+.teapotinfo {
+    opacity: 0%;
+    background-image: url('../info/teapotinfo.svg');
+}
+.teapot:hover ~ .teapotinfo {
+    opacity: 100%;
+    display: block;
+}
+.glasses {
+    width: 12.141vw; 
+    height: 5.732vw;
+    background-image: url('../svg/glasses.svg');
+    top: 48.646vw;
+    left: 19.115vw;
+}
+.glasses:hover {
+    background-image: url('../svgfill/glassesfill.svg');
+}
+.glassesinfo {
+    opacity: 0%;
+    background-image: url('../info/glassesinfo.svg');
+}
+.glasses:hover ~ .glassesinfo {
+    opacity: 100%;
+    display: block;
+}
+.candle {
+    width: 10.096vw; 
+    height: 11.015vw;
+    background-image: url('../svg/candle.svg');
+    top: 28.698vw;
+    left: 53.646vw;
+}
+.candle:hover {
+    background-image: url('../svgfill/candlefill.svg');
+}
+.candleinfo {
+    opacity: 0%;
+    background-image: url('../info/candleinfo.svg');
+}
+.candle:hover ~ .candleinfo {
+    opacity: 100%;
+    display: block;
+}
+.tshirt {
+    width: 23.178vw; 
+    height: 19.808vw;
+    background-image: url('../svg/tshirt.svg');
+    top: 41.979vw;
+    left: 52.135vw;
+}
+.tshirt:hover {
+    background-image: url('../svgfill/tshirtfill.svg');
+}
+.tshirtinfo {
+    opacity: 0%;
+    background-image: url('../info/tshirtinfo.svg');
+}
+.tshirt:hover ~ .tshirtinfo {
+    opacity: 100%;
+    display: block;
+}
+.axe {
+    width: 13.970vw; 
+    height: 10.219vw;
+    background-image: url('../svg/axe.svg');
+    top: 46.510vw;
+    left: 83.073vw;
+}
+.axe:hover {
+    background-image: url('../svgfill/axefill.svg');
+}
+.axeinfo {
+    opacity: 0%;
+    background-image: url('../info/axeinfo.svg');
+}
+.axe:hover ~ .axeinfo {
+    opacity: 100%;
+    display: block;
+}
+.bowl {
+    width: 18.393vw; 
+    height: 9.063vw;
+    background-image: url('../svg/bowl.svg');
+    top: 58.958vw;
+    left: 74.896vw;
+}
+.bowl:hover:hover {
+    background-image: url('../svgfill/bowlfill.svg');
+}
+.bowlinfo {
+    opacity: 0%;
+    background-image: url('../info/bowlinfo.svg');
+}
+.bowl:hover ~ .bowlinfo {
+    opacity: 100%;
+    display: block;
+}
+.frame {
+    width: 23.890vw; 
+    height: 40.113vw;
+    background-image: url('../svg/frame.svg');
+    top: 57.604vw;
+    left: 5.573vw;
+}
+.frame:hover {
+    background-image: url('../svgfill/framefill.svg');
+}
+.frameinfo {
+    opacity: 0%;
+    background-image: url('../info/frameinfo.svg');
+}
+.frame:hover ~ .frameinfo {
+    opacity: 100%;
+    display: block;
+}
+.book {
+    width: 15.913vw; 
+    height: 11.289vw;
+    background-image: url('../svg/book.svg');
+    top: 73.229vw;
+    left: 32.240vw;
+}
+.book:hover {
+    background-image: url('../svgfill/bookfill.svg');
+}
+.bookinfo {
+    opacity: 0%;
+    background-image: url('../info/bookinfo.svg');}
+.book:hover ~ .bookinfo {
+    opacity: 100%;
+    display: block;
+}
+.abacus {
+    width: 14.764vw; 
+    height: 18.264vw;
+    background-image: url('../svg/abacus.svg');
+    top: 65.000vw;
+    left: 50.938vw;
+}
+.abacus:hover {
+    background-image: url('../svgfill/abacusfill.svg');
+}
+.abacusinfo {
+    opacity: 0%;
+    background-image: url('../info/abacusinfo.svg');
+}
+.abacus:hover ~ .abacusinfo {
+    opacity: 100%;
+    display: block;
+}
+.mirror {
+    width: 9.195vw; 
+    height: 20.122vw;
+    background-image: url('../svg/mirror.svg');
+    top: 100.573vw;
+    left: 3.438vw;
+}
+.mirror:hover {
+    background-image: url('../svgfill/mirrorfill.svg');
+}
+.mirrorinfo {
+    opacity: 0%;
+    background-image: url('../info/mirrorinfo.svg');
+}
+.mirror:hover ~ .mirrorinfo {
+    opacity: 100%;
+    display: block;
+}
+.flowers {
+    width: 14.788vw; 
+    height: 20.534vw;
+    background-image: url('../svg/flowers.svg');
+    top: 100.573vw;
+    left: 17.448vw;
+}
+.flowers:hover {
+    background-image: url('../svgfill/flowersfill.svg');
+}
+.flowersinfo {
+    opacity: 0%;
+    background-image: url('../info/flowersinfo.svg');
+}
+.flowers:hover ~ .flowersinfo {
+    opacity: 100%;
+    display: block;
+}
+.vase {
+    width: 14.536vw; 
+    height: 24.823vw;
+    background-image: url('../svg/vase.svg');
+    top: 92.917vw;
+    left: 36.771vw;
+}
+.vase:hover {
+    background-image: url('../svgfill/vasefill.svg');
+}
+.vaseinfo {
+    opacity: 0%;
+    background-image: url('../info/vaseinfo.svg');
+}
+.vase:hover ~ .vaseinfo {
+    opacity: 100%;
+    display: block;
+}
+.sword {
+    width: 8.721vw; 
+    height: 25.478vw;
+    background-image: url('../svg/sword.svg');
+    top: 87.969vw;
+    left: 56.510vw;
+}
+.sword:hover {
+    background-image: url('../svgfill/swordfill.svg');
+}
+.swordinfo {
+    opacity: 0%;
+    background-image: url('../info/swordinfo.svg');
+}
+.sword:hover ~ .swordinfo {
+    opacity: 100%;
+    display: block;
+}
+.bag {
+    width: 27.977vw; 
+    height: 15.324vw;
+    background-image: url('../svg/bag.svg');
+    top: 123.125vw;
+    left: 12.292vw;
+}
+.bag:hover {
+    background-image: url('../svgfill/bagfill.svg');
+}
+.baginfo {
+    opacity: 0%;
+    background-image: url('../info/baginfo.svg');
+}
+.bag:hover ~ .baginfo {
+    opacity: 100%;
+    display: block;
+}
+.key {
+    width: 3.522vw; 
+    height: 7.826vw;
+    background-image: url('../svg/key.svg');
+    top: 121.823vw;
+    left: 43.646vw;
+}
+.key:hover {
+    background-image: url('../svgfill/keyfill.svg');
+}
+.keyinfo {
+    opacity: 0%;
+    background-image: url('../info/keyinfo.svg');
+}
+.key:hover ~ .keyinfo {
+    opacity: 100%;
+    display: block;
+}
+.ball {
+    width: 10.045vw; 
+    height: 10.045vw;
+    background-image: url('../svg/ball.svg');
+    top: 117.760vw;
+    left: 51.302vw;
+}
+.ball:hover {
+    background-image: url('../svgfill/ballfill.svg');
+}
+.ballinfo {
+    opacity: 0%;
+    background-image: url('../info/ballinfo.svg');
+}
+.ball:hover ~ .ballinfo {
+    opacity: 100%;
+    display: block;
+}
+.statue {
+    width: 29.997vw; 
+    height: 63.406vw;
+    background-image: url('../svg/statue.svg');
+    top: 71.354vw;
+    left: 64.688vw;
+}
+.statue:hover {
+    background-image: url('../svgfill/statuefill.svg');
+ }
+.statueinfo {
+    opacity: 0%;
+    background-image: url('../info/statueinfo.svg');
+}
+.statue:hover ~ .statueinfo {
+    opacity: 100%;
+    display: block;
+}
+.sofa {
+    width: 52.766vw; 
+    height: 24.271vw;
+    background-image: url('../svg/sofa.svg');
+    top: 132.292vw;
+    left: 3.385vw;
+}
+.sofa:hover {
+    background-image: url('../svgfill/sofafill.svg');
+}
+.sofainfo {
+    opacity: 0%;
+    background-image: url('../info/sofainfo.svg');}
+.sofa:hover ~ .sofainfo {
+    opacity: 100%;
+    display: block;
+}
+.chest {
+    width: 38.333vw; 
+    height: 20.781vw;
+    background-image: url('../svg/chest.svg');
+    top: 136.250vw;
+    left: 58.542vw;
+}
+.chest:hover {
+    background-image: url('../svgfill/chestfill.svg');
+}
+.chestinfo {
+    opacity: 0%;
+    background-image: url('../info/chestinfo.svg');
+}
+.chest:hover ~ .chestinfo {
+    opacity: 100%;
+    display: block;
+}
+/* menu */
+.nav-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    overflow-x: auto; 
+}
+  
+nav {
+    width: max-content; 
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    white-space: nowrap;
+}
+  
+nav ul li {
+    margin: 0 10px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: filter 0.3s ease; 
+    filter: blur(2px); 
+}
+  
+nav ul li a:hover {
+    filter: blur(0);
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

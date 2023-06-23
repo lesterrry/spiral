@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/content.css">
+    <title>Спираль</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/paper-full.js"></script>
+    <script src="js/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="canvas" data-paper-ignore="true">
+        tool.minDistance = 2;
+    
+        var path;
+    
+        function onMouseDown(event) {
+          path = new Path({
+            strokeColor: 'Blue',
+            strokeWidth: 2,
+            strokeCap: 'round',
+            shadowColor: new Color('Blue'),
+            shadowBlur: 5,
+            shadowOffset: new Point(0, 0)
+          });
+          path.strokeColor.alpha = 1;
+          path.smooth();
+        }
+    
+        function onMouseDrag(event) {
+          path.add(event.point);
+        }
+    
+      </script>
+</head>
+<body>
+    <p><span class="linkk one"><a class="linkk one" href="index.html">СПИРАЛЬ</a></span> – ЭТО <span class="linkk two"><a class="linkk two" href="interweb/game.html">БЕСКОНЕЧНАЯ БАРАХОЛКА</a></span>, КОТОРАЯ ПОЯВИЛАСЬ ВОКРУГ ЗАГАДОЧНОГО КРАТЕРА. ТОЧНО НЕИЗВЕСТНО ЕГО ИСТИННОЕ ПРОИСХОЖДЕНИЕ, НО ЯСНО ОДНО — КАКИМ-ТО ОБРАЗОМ В НЕМ ОКАЗАЛОСЬ ОЧЕНЬ МНОГО РАЗНООБРАЗНЫХ ПРЕДМЕТОВ, НЕКОТОРЫЕ 
+        ИЗ КОТОРЫХ ЯВЛЯЮТСЯ НАСТОЯЩИМ
+        СОКРОВИЩЕМ И СЕЙЧАС <span class="linkk three"><a class="linkk three" href="pages/shop.html">УСПЕШНО ПРОДАЮТСЯ</a></span>. ЧАСТО НА БАРАХОЛКЕ ПРОИСХОДЯТ РАЗЛИЧНЫЕ <span class="linkk four"><a class="linkk four" href="pages/afisha.html">МЕРОПРИЯТИЯ</a></span>.</p>
+    <div class="cursor"></div>
+</body>
+</html>
